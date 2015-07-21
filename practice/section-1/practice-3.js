@@ -1,3 +1,5 @@
 function collect_same_elements(collection_a, object_b) {
-  //在这里写入代码
-}qq
+ 	return collection_a.filter(function(item) {
+		return(object_b.value.indexOf(item) !== -1)	
+	}) 
+}

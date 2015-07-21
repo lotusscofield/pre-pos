@@ -8,4 +8,4 @@ describe('practice-1-2', function() {
 
     expect(result).toEqual(["a", "e", "f", "d"]);
   });
-});
+})
