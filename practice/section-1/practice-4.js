@@ -6,10 +6,9 @@ function collect_same_elements(collection_a, object_b) {
     collection_c.push(collection_a[i].key);
 	}
 
-  return object_b.value.filter(function(item) {
-    return(collection_c.indexOf(item) !== -1) ;
+  return collection_c.filter(function(item) {
+    return(object_b.value.indexOf(item) !== -1) ;
     }) ;
   }
 
 }
-
