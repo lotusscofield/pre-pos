@@ -1,5 +1,6 @@
+var SYMBOL_START_POS = 2;
+
 function objectify(str) {
-  var SYMBOL_START_POS = 2;
   var count = 1;
 
   if (str.indexOf("-") > -1 ||
@@ -26,7 +27,7 @@ function count_same_elements(collection) {
       return item.name === val.name;
     });
 
-    if(exist_items.length === 0) {
+    if (exist_items.length === 0) {
       result.push(val);
     } else {
       exist_items[0].summary += val.summary;
